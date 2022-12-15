@@ -19,8 +19,15 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
         'password',
+        'title',
+        'hl_image',
+        'main_image',
+        'body',
+        'kokopoi_question',
+        'kokopoi_answer',
+        'emb_img_title',
+        'emb_img',
     ];
 
     /**
@@ -38,7 +45,7 @@ class User extends Authenticatable
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    // protected $casts = [
+    //     'email_verified_at' => 'datetime',
+    // ];
 }
